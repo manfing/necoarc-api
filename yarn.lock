@@ -29,6 +29,11 @@
   dependencies:
     "@jridgewell/trace-mapping" "0.3.9"
 
+"@eshaz/web-worker@1.2.1":
+  "integrity" "sha512-v5AKAVtM0toVD2rDCGjzhySWlXG/sG5HVialdzrxFKTAnFZNCjQelX0n2tPK0tE86jf4s3hpWlpRtOh8OObktg=="
+  "resolved" "https://registry.npmjs.org/@eshaz/web-worker/-/web-worker-1.2.1.tgz"
+  "version" "1.2.1"
+
 "@hapi/boom@^10.0.0":
   "integrity" "sha512-1YVs9tLHhypBqqinKQRqh7FUERIolarQApO37OWkzD+z6y6USi871Sv746zBPKcIOBuI6g6y4FrwX87mmJ90Gg=="
   "resolved" "https://registry.npmjs.org/@hapi/boom/-/boom-10.0.0.tgz"
@@ -128,6 +133,18 @@
   "integrity" "sha512-Vvn3zZrhQZkkBE8LSuW3em98c0FwgO4nxzv6OdSxPKJIEKY2bGbHn+mhGIPerzI4twdxaP8/0+06HBpwf345Lw=="
   "resolved" "https://registry.npmjs.org/@protobufjs/utf8/-/utf8-1.1.0.tgz"
   "version" "1.1.0"
+
+"@thi.ng/bitstream@^2.2.12":
+  "integrity" "sha512-phKOd7gfDcZfiu5qHr2etak9D1jczY8tW5vojaiAwEwCA09ZkYTuiTlrBJdTGnqjc3//1Kb6O3EQo7two5GlbQ=="
+  "resolved" "https://registry.npmjs.org/@thi.ng/bitstream/-/bitstream-2.2.22.tgz"
+  "version" "2.2.22"
+  dependencies:
+    "@thi.ng/errors" "^2.2.17"
+
+"@thi.ng/errors@^2.2.17":
+  "integrity" "sha512-gL1KOHVQpSX9e5BDbKzxJcXj+tM2T6dJOxXTJz3nHNSXT6VdEsXCVeLKGUFBkLkA5QsH/nzmgQq7a5vS7cdGTA=="
+  "resolved" "https://registry.npmjs.org/@thi.ng/errors/-/errors-2.2.17.tgz"
+  "version" "2.2.17"
 
 "@tokenizer/token@^0.3.0":
   "integrity" "sha512-OvjF+z51L3ov0OyAU0duzsYuvO01PH7x4t6DJx+guahgTnBHkhJdG7soQeTSFLWN3efnHyibZ4Z8l2EuWwJN3A=="
@@ -268,6 +285,49 @@
   dependencies:
     "@types/node" "*"
 
+"@wasm-audio-decoders/common@9.0.1":
+  "integrity" "sha512-s4KxPsxhD6e+EtjmHPzTmKJSJTEXHGYlBzUGGLN/plV01x3RecybW73nIMtdLLXL8k/zQ8HYFcA6d9lqCJcDjQ=="
+  "resolved" "https://registry.npmjs.org/@wasm-audio-decoders/common/-/common-9.0.1.tgz"
+  "version" "9.0.1"
+  dependencies:
+    "@eshaz/web-worker" "1.2.1"
+
+"@wasm-audio-decoders/flac@^0.1.12":
+  "integrity" "sha512-k4PELVzBu4p4j0YmA2K8VF0GxoWWYqkqa3C29nOikOss1SZLnX2CczfiJCklL9AA/9tlZrvBJz3/nDxXDqR35A=="
+  "resolved" "https://registry.npmjs.org/@wasm-audio-decoders/flac/-/flac-0.1.12.tgz"
+  "version" "0.1.12"
+  dependencies:
+    "@wasm-audio-decoders/common" "9.0.1"
+    "codec-parser" "2.4.2"
+
+"@wasm-audio-decoders/ogg-vorbis@^0.1.7":
+  "integrity" "sha512-MftO1fJeBRUuDAZfa9Yp/gf+786PWt/JyiFXj+Ntn0mxlKDyPr3pTXx8PvhmO2/s/nabHDhAhiZi4aXzaBEUpg=="
+  "resolved" "https://registry.npmjs.org/@wasm-audio-decoders/ogg-vorbis/-/ogg-vorbis-0.1.7.tgz"
+  "version" "0.1.7"
+  dependencies:
+    "@wasm-audio-decoders/common" "9.0.1"
+    "codec-parser" "2.4.2"
+
+"@whiskeysockets/baileys@^6.4.0":
+  "integrity" "sha512-SdCoVpILWX7z2WEe40BwNjMqpI6Guf0gbG80NNfsJBcRcDQIS9pkmazIhTvNKytWZm7BFZR+QNKcBUxdPqdLsQ=="
+  "resolved" "https://registry.npmjs.org/@whiskeysockets/baileys/-/baileys-6.4.0.tgz"
+  "version" "6.4.0"
+  dependencies:
+    "@adiwajshing/keyed-db" "^0.2.4"
+    "@hapi/boom" "^9.1.3"
+    "audio-decode" "^2.1.3"
+    "axios" "^1.3.3"
+    "cache-manager" "^5.2.2"
+    "futoin-hkdf" "^1.5.1"
+    "libphonenumber-js" "^1.10.20"
+    "libsignal" "github:adiwajshing/libsignal-node"
+    "music-metadata" "^7.12.3"
+    "node-cache" "^5.1.2"
+    "pino" "^7.0.0"
+    "protobufjs" "^6.11.3"
+    "uuid" "^9.0.0"
+    "ws" "^8.13.0"
+
 "abbrev@1":
   "integrity" "sha512-nne9/IiQ/hzIhY6pdDnbBtz7DjPTKrY00P/zvPSm5pOFkl6xuGrGnXn/VtTNNfNtAfZ9/1RtehkszU9qcTii0Q=="
   "resolved" "https://registry.npmjs.org/abbrev/-/abbrev-1.1.1.tgz"
@@ -343,6 +403,30 @@
   "resolved" "https://registry.npmjs.org/atomic-sleep/-/atomic-sleep-1.0.0.tgz"
   "version" "1.0.0"
 
+"audio-buffer@^5.0.0":
+  "integrity" "sha512-gsDyj1wwUp8u7NBB+eW6yhLb9ICf+0eBmDX8NGaAS00w8/fLqFdxUlL5Ge/U8kB64DlQhdonxYC59dXy1J7H/w=="
+  "resolved" "https://registry.npmjs.org/audio-buffer/-/audio-buffer-5.0.0.tgz"
+  "version" "5.0.0"
+
+"audio-decode@^2.1.3":
+  "integrity" "sha512-i1KTHqBXcU3vVCPXfp4zZCaXsLYyO4CNbt6JhvV1so/PpOpBnIXNFgHEq0bWNsroUV/J6i2/Yck0QhoaCzGh+A=="
+  "resolved" "https://registry.npmjs.org/audio-decode/-/audio-decode-2.1.4.tgz"
+  "version" "2.1.4"
+  dependencies:
+    "@wasm-audio-decoders/flac" "^0.1.12"
+    "@wasm-audio-decoders/ogg-vorbis" "^0.1.7"
+    "audio-buffer" "^5.0.0"
+    "audio-type" "^2.2.0"
+    "mpg123-decoder" "^0.4.8"
+    "node-wav" "^0.0.2"
+    "ogg-opus-decoder" "^1.6.4"
+    "qoa-format" "^1.0.0"
+
+"audio-type@^2.2.0":
+  "integrity" "sha512-En9AY6EG1qYqEy5L/quryzbA4akBpJrnBZNxeKTqGHC2xT9Qc4aZ8b7CcbOMFTTc/MGdoNyp+SN4zInZNKxMYA=="
+  "resolved" "https://registry.npmjs.org/audio-type/-/audio-type-2.2.1.tgz"
+  "version" "2.2.1"
+
 "axios@^0.24.0":
   "integrity" "sha512-Q6cWsys88HoPgAaFAVUb0WpPk0O8iTeisR9IMqy9G8AbO4NlpVknrnQS03zzF9PGAWgO3cgletO3VjV/P7VztA=="
   "resolved" "https://registry.npmjs.org/axios/-/axios-0.24.0.tgz"
@@ -357,6 +441,15 @@
   dependencies:
     "follow-redirects" "^1.14.9"
     "form-data" "^4.0.0"
+
+"axios@^1.3.3":
+  "integrity" "sha512-S4XCWMEmzvo64T9GfvQDOXgYRDJ/wsSZc7Jvdgx5u1sd0JwsuPLqb3SYmusag+edF6ziyMensPVqLTSc1PiSEA=="
+  "resolved" "https://registry.npmjs.org/axios/-/axios-1.4.0.tgz"
+  "version" "1.4.0"
+  dependencies:
+    "follow-redirects" "^1.15.0"
+    "form-data" "^4.0.0"
+    "proxy-from-env" "^1.1.0"
 
 "balanced-match@^1.0.0":
   "integrity" "sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw=="
@@ -433,6 +526,14 @@
   "resolved" "https://registry.npmjs.org/bytes/-/bytes-3.1.2.tgz"
   "version" "3.1.2"
 
+"cache-manager@^5.2.2":
+  "integrity" "sha512-9OErI8fksFkxAMJ8Mco0aiZSdphyd90HcKiOMJQncSlU1yq/9lHHxrT8PDayxrmr9IIIZPOAEfXuGSD7g29uog=="
+  "resolved" "https://registry.npmjs.org/cache-manager/-/cache-manager-5.2.3.tgz"
+  "version" "5.2.3"
+  dependencies:
+    "lodash.clonedeep" "^4.5.0"
+    "lru-cache" "^9.1.2"
+
 "call-bind@^1.0.0":
   "integrity" "sha512-7O+FbCihrB5WGbFYesctwmTKae6rOiIzmz1icreWJ+0aA7LJfuqhEso2T9ncpcFtzMQtzXf2QGGueWJGTYsqrA=="
   "resolved" "https://registry.npmjs.org/call-bind/-/call-bind-1.0.2.tgz"
@@ -479,6 +580,11 @@
   "integrity" "sha512-3Pe/CF1Nn94hyhIYpjtiLhdCoEoz0DqQ+988E9gmeEdQZlojxnOb74wctFyuwWQHzqyf9X7C7MG8juUpqBJT8w=="
   "resolved" "https://registry.npmjs.org/clone/-/clone-2.1.2.tgz"
   "version" "2.1.2"
+
+"codec-parser@2.4.2":
+  "integrity" "sha512-RN6gT8aGdDq4vx//Ln+MRDIKPXA3SpJKsCcQSZ4poF2bZCO4/G0C2Ko/MVNpbJ7Y9ewpzeuLlBx2zH8BpcM4ew=="
+  "resolved" "https://registry.npmjs.org/codec-parser/-/codec-parser-2.4.2.tgz"
+  "version" "2.4.2"
 
 "color-convert@^2.0.1":
   "integrity" "sha512-RRECPsj7iu/xb5oKYcsFHSppFNnsj/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpfK/U584fMg38ZHCaElKQ=="
@@ -784,7 +890,7 @@
     "async" ">=0.2.9"
     "which" "^1.1.1"
 
-"follow-redirects@^1.14.4", "follow-redirects@^1.14.9":
+"follow-redirects@^1.14.4", "follow-redirects@^1.14.9", "follow-redirects@^1.15.0":
   "integrity" "sha512-yLAMQs+k0b2m7cVxpS1VKJVvoz7SS9Td1zss3XRwXj+ZDH00RJgnuLx7E44wx02kQLrdM3aOOy+FpzS7+8OizA=="
   "resolved" "https://registry.npmjs.org/follow-redirects/-/follow-redirects-1.15.1.tgz"
   "version" "1.15.1"
@@ -823,7 +929,7 @@
   "resolved" "https://registry.npmjs.org/function-bind/-/function-bind-1.1.1.tgz"
   "version" "1.1.1"
 
-"futoin-hkdf@^1.5.0":
+"futoin-hkdf@^1.5.0", "futoin-hkdf@^1.5.1":
   "integrity" "sha512-g5d0Qp7ks55hYmYmfqn4Nz18XH49lcCR+vvIvHT92xXnsJaGZmY1EtWQWilJ6BQp57heCIXM/rRo+AFep8hGgg=="
   "resolved" "https://registry.npmjs.org/futoin-hkdf/-/futoin-hkdf-1.5.1.tgz"
   "version" "1.5.1"
@@ -978,7 +1084,12 @@
   "resolved" "https://registry.npmjs.org/jsqr/-/jsqr-1.4.0.tgz"
   "version" "1.4.0"
 
-"libsignal@git+https://github.com/adiwajshing/libsignal-node.git":
+"libphonenumber-js@^1.10.20":
+  "integrity" "sha512-4NjVXVUmpZ9Zsqq6FXa2+MKI+KAI3tOqA0pxXgXGluhpj4ge5didmbWJpMBqGB3AVGv1SnEtKdGTbxjSEG1kCQ=="
+  "resolved" "https://registry.npmjs.org/libphonenumber-js/-/libphonenumber-js-1.10.38.tgz"
+  "version" "1.10.38"
+
+"libsignal@git+https://github.com/adiwajshing/libsignal-node.git", "libsignal@github:adiwajshing/libsignal-node":
   "resolved" "git+ssh://git@github.com/adiwajshing/libsignal-node.git#11dbd962ea108187c79a7c46fe4d6f790e23da97"
   "version" "2.0.1"
   dependencies:
@@ -992,10 +1103,20 @@
   dependencies:
     "p-locate" "^4.1.0"
 
+"lodash.clonedeep@^4.5.0":
+  "integrity" "sha512-H5ZhCF25riFd9uB5UCkVKo61m3S/xZk1x4wA6yp/L3RFP6Z/eHH1ymQcGLo7J3GMPfm0V/7m1tryHuGVxpqEBQ=="
+  "resolved" "https://registry.npmjs.org/lodash.clonedeep/-/lodash.clonedeep-4.5.0.tgz"
+  "version" "4.5.0"
+
 "long@^4.0.0":
   "integrity" "sha512-XsP+KhQif4bjX1kbuSiySJFNAehNxgLb6hPRGJ9QsUr8ajHkuXGdrHmFUTUUXhDwVX2R5bY4JNZEwbUiMhV+MA=="
   "resolved" "https://registry.npmjs.org/long/-/long-4.0.0.tgz"
   "version" "4.0.0"
+
+"lru-cache@^9.1.2":
+  "integrity" "sha512-ERJq3FOzJTxBbFjZ7iDs+NiK4VI9Wz+RdrrAB8dio1oV+YvdPzUEE4QNiT2VD51DkIbCYRUUzCRkssXCHqSnKQ=="
+  "resolved" "https://registry.npmjs.org/lru-cache/-/lru-cache-9.1.2.tgz"
+  "version" "9.1.2"
 
 "make-error@^1.1.1":
   "integrity" "sha512-s8UhlNe7vPKomQhC1qFelMokr/Sc3AgNbso3n74mVPA5LTZwkB9NlXf4XPamLxJE8h0gh73rM94xvwRT2CVInw=="
@@ -1056,6 +1177,13 @@
   "resolved" "https://registry.npmjs.org/mkdirp-classic/-/mkdirp-classic-0.5.3.tgz"
   "version" "0.5.3"
 
+"mpg123-decoder@^0.4.8":
+  "integrity" "sha512-HXs8vbPjiFM0NOZ45T3C5i7mpYGEYhjH37SnFA907lOb9c93DQL40cDjerxj65IMwAYyPFq1aUjtDOjyR7O0gQ=="
+  "resolved" "https://registry.npmjs.org/mpg123-decoder/-/mpg123-decoder-0.4.8.tgz"
+  "version" "0.4.8"
+  dependencies:
+    "@wasm-audio-decoders/common" "9.0.1"
+
 "ms@^2.1.1", "ms@2.1.3":
   "integrity" "sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA=="
   "resolved" "https://registry.npmjs.org/ms/-/ms-2.1.3.tgz"
@@ -1103,6 +1231,11 @@
   dependencies:
     "whatwg-url" "^5.0.0"
 
+"node-wav@^0.0.2":
+  "integrity" "sha512-M6Rm/bbG6De/gKGxOpeOobx/dnGuP0dz40adqx38boqHhlWssBJZgLCPBNtb9NkrmnKYiV04xELq+R6PFOnoLA=="
+  "resolved" "https://registry.npmjs.org/node-wav/-/node-wav-0.0.2.tgz"
+  "version" "0.0.2"
+
 "node-webpmux@^3.1.0":
   "integrity" "sha512-vG75BAe9zKghN+Y+XsJMPdOfVyesn1MmGvd/DMxeQ6gtpB3U053yCWXO1Gl2QWXTfU1++7flTihv/yB6EEdtKQ=="
   "resolved" "https://registry.npmjs.org/node-webpmux/-/node-webpmux-3.1.1.tgz"
@@ -1141,6 +1274,15 @@
   "resolved" "https://registry.npmjs.org/object-inspect/-/object-inspect-1.12.2.tgz"
   "version" "1.12.2"
 
+"ogg-opus-decoder@^1.6.4":
+  "integrity" "sha512-MYqiJyCZWjIKKRJMXRVi69D3VGbaR/FNCNcINNI5Ec5ZUm5pLyDT6f0cYksU0Hb3ZHXXQIp62VJChYqwk60EMg=="
+  "resolved" "https://registry.npmjs.org/ogg-opus-decoder/-/ogg-opus-decoder-1.6.4.tgz"
+  "version" "1.6.4"
+  dependencies:
+    "@wasm-audio-decoders/common" "9.0.1"
+    "codec-parser" "2.4.2"
+    "opus-decoder" "0.7.1"
+
 "on-exit-leak-free@^0.2.0":
   "integrity" "sha512-dqaz3u44QbRXQooZLTUKU41ZrzYrcvLISVgbrzbyCMxpmSLJvZ3ZamIJIZ29P6OhZIkNIQKosdeM6t1LYbA9hg=="
   "resolved" "https://registry.npmjs.org/on-exit-leak-free/-/on-exit-leak-free-0.2.0.tgz"
@@ -1159,6 +1301,13 @@
   "version" "1.4.0"
   dependencies:
     "wrappy" "1"
+
+"opus-decoder@0.7.1":
+  "integrity" "sha512-AOFCMKLn7LJm8pOkksY5TsW/6+XmNyh1OQS9gxmdOGHLNYoOBrjSfc0nPNcmUMGEzOrTqZtPi8VJ/ABs2Hndvg=="
+  "resolved" "https://registry.npmjs.org/opus-decoder/-/opus-decoder-0.7.1.tgz"
+  "version" "0.7.1"
+  dependencies:
+    "@wasm-audio-decoders/common" "9.0.1"
 
 "p-limit@^2.2.0":
   "integrity" "sha512-//88mFWSJx8lxCzwdAABTJL2MyWB12+eIY7MDL2SqLmAkeKU9qxRvWuSyTjm3FUmpBEMuFfckAIqEaVGUDxb6w=="
@@ -1312,7 +1461,7 @@
     "forwarded" "0.2.0"
     "ipaddr.js" "1.9.1"
 
-"proxy-from-env@1.1.0":
+"proxy-from-env@^1.1.0", "proxy-from-env@1.1.0":
   "integrity" "sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg=="
   "resolved" "https://registry.npmjs.org/proxy-from-env/-/proxy-from-env-1.1.0.tgz"
   "version" "1.1.0"
@@ -1347,6 +1496,13 @@
     "tar-fs" "2.1.1"
     "unbzip2-stream" "1.4.3"
     "ws" "8.5.0"
+
+"qoa-format@^1.0.0":
+  "integrity" "sha512-Vjp2aV2x06tHbZesCi2UtISaFdlLzy47Vbt0rNwwdihKFvGtUeFfytdnA8XZYADqWtRbK19+XXeRkv1Stg4qSQ=="
+  "resolved" "https://registry.npmjs.org/qoa-format/-/qoa-format-1.0.0.tgz"
+  "version" "1.0.0"
+  dependencies:
+    "@thi.ng/bitstream" "^2.2.12"
 
 "qrcode-terminal@^0.12.0":
   "integrity" "sha512-EXtzRZmC+YGmGlDFbXKxQiMZNwCLEO6BANKXG4iCtSIM0yqc/pappSx3RIKr4r0uh5JsBckOXeKrB3Iz7mdQpQ=="
@@ -1700,6 +1856,11 @@
   "resolved" "https://registry.npmjs.org/utils-merge/-/utils-merge-1.0.1.tgz"
   "version" "1.0.1"
 
+"uuid@^9.0.0":
+  "integrity" "sha512-MXcSTerfPa4uqyzStbRoTgt5XIe3x5+42+q1sDuy3R5MDk66URdLMOZe5aPX/SQd+kuYAh0FdP/pO28IkQyTeg=="
+  "resolved" "https://registry.npmjs.org/uuid/-/uuid-9.0.0.tgz"
+  "version" "9.0.0"
+
 "v8-compile-cache-lib@^3.0.1":
   "integrity" "sha512-wa7YjyUGfNZngI/vtK0UHAN+lgDCxBPCylVXGp0zu59Fz5aiGtNXaq3DhIov063MorB+VfufLh3JlF2KdTK3xg=="
   "resolved" "https://registry.npmjs.org/v8-compile-cache-lib/-/v8-compile-cache-lib-3.0.1.tgz"
@@ -1766,6 +1927,11 @@
   "integrity" "sha512-BWX0SWVgLPzYwF8lTzEy1egjhS4S4OEAHfsO8o65WOVsrnSRGaSiUaa9e0ggGlkMTtBlmOpEXiie9RUcBO86qg=="
   "resolved" "https://registry.npmjs.org/ws/-/ws-8.5.0.tgz"
   "version" "8.5.0"
+
+"ws@^8.13.0":
+  "integrity" "sha512-x9vcZYTrFPC7aSIbj7sRCYo7L/Xb8Iy+pW0ng0wt2vCJv7M9HOMy0UoN3rr+IFC7hb7vXoqS+P9ktyLLLhO+LA=="
+  "resolved" "https://registry.npmjs.org/ws/-/ws-8.13.0.tgz"
+  "version" "8.13.0"
 
 "y18n@^4.0.0":
   "integrity" "sha512-JKhqTOwSrqNA1NY5lSztJ1GrBiUodLMmIZuLiDaMRJ+itFd+ABVE8XBjOvIWL+rSqNDC74LCSFmlb/U4UZ4hJQ=="

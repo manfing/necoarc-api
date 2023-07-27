@@ -1,7 +1,7 @@
 import { API, APIStatus, CommForm, IMessage_format } from "../api_services_model";
 import dotenv from 'dotenv';
 import { ApiServicesController } from "../../api_controllers/api_services_controller";
-import makeWASocket, { DisconnectReason, useMultiFileAuthState } from '@adiwajshing/baileys';
+import makeWASocket, { DisconnectReason, useMultiFileAuthState } from '@whiskeysockets/baileys';
 import { Boom } from '@hapi/boom'
 import rimraf from "rimraf";
 
