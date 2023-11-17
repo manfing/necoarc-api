@@ -41,6 +41,7 @@ export abstract class ApiServicesController {
         let running_session = this._sessions_instances.find(
             (el) => el.session_name() == _session_name
         );
+
         return running_session ? running_session : false;
     }
 
@@ -50,6 +51,7 @@ export abstract class ApiServicesController {
         let response = running_session
             ? { session: running_session, status: running_session.session_status() }
             : { session: false, status: false };
+        
         return response;
     }
 
