@@ -49,7 +49,7 @@ export abstract class ApiServicesController {
     public static Get_session_status(_session_name: string) {
         let running_session = this.Get_session(_session_name) as CurrentApi;
         let response = running_session
-            ? { session: running_session, status: running_session.session_status() }
+            ? { session: running_session.session_name(), status: running_session.session_status() }
             : { session: false, status: false };
         
         return response;
