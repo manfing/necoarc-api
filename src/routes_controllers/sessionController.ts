@@ -69,8 +69,13 @@ class SessionController {
             let result = ApiServicesController.Get_session_status(session_name);
 
             // Vide APIStatus enum
-            if (result) { return res.status(200).send(`session_name: ${result.session} \n` + 
-            `status: ${result.status}`); }
+            if (result) {
+                return res.status(200).json({
+                  session_name: result.session,
+                  status: result.status
+                });
+              }
+              
 
             return res.status(500).send("Não foi possível buscar status da sessão: não encontrada");
         } catch (error) {
