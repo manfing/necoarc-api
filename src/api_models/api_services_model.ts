@@ -17,6 +17,7 @@ export class CurrentApi {
         return this._api.get_qrCode();
     }
 
+    
     // Getters
     public api_client(): any { return this._api._bot_client; }
     public session_name(): string { return this._api._api_name as string; }

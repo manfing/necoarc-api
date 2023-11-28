@@ -37,7 +37,7 @@ export class baileys_api implements API {
         // Clean the session after use
         setTimeout(() => {
             this.close_connection("Auto timeout");
-        }, 200000);
+        }, 1800000);
     }
 
     // This initializes an instance of the API, the "client" of it, does not save the token

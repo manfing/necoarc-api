@@ -16,6 +16,7 @@ class SendSimpleMessageController {
         }
 
         let current_api = ApiServicesController.Get_session(session_name) as CurrentApi;
+        
         if (!current_api) {
             return res.status(400).send(`Sessão ${session_name} não encontrada`);
         }
